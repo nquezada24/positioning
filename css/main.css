@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-    background-color: lightgray;
+    background-color: rgb(231, 206, 240);
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -17,12 +17,12 @@ html {
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #fff;
+    background: rgb(163, 133, 208);
     line-height: 2.5em;
 }
 
 main.wrapper {
-    background-color: white;
+    background-color: rgba(253, 222, 231, 0.963);
     overflow: auto;
 }
 
@@ -55,7 +55,7 @@ footer {
 
 /* Responsive rules */
 
-/* DESKTOP */
+/* Profess */
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 80%;
@@ -75,7 +75,7 @@ footer {
     
 }
 
-/* TABLET */
+/* Luna */
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
@@ -95,7 +95,7 @@ footer {
 
 }
 
-/* PHONE */
+/* Me at beach */
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;
