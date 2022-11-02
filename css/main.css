@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-    background-color: rgb(231, 206, 240);
+    background-color: #DCC7AA;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -17,12 +17,18 @@ html {
 h1 {
     font-weight: normal;
     margin: auto;
-    background: rgb(163, 133, 208);
+    background: #F7882F;
     line-height: 2.5em;
 }
 
+/*adds google font to H1 for main pages */
+h1.page-header{
+    font-family: 'Mangrove' ,serif;
+}
+
+
 main.wrapper {
-    background-color: rgba(253, 222, 231, 0.963);
+    background-color: #F7C331;
     overflow: auto;
 }
 
@@ -37,13 +43,13 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color: bluberry#6B7A8F;
     text-decoration: none;
 }
 
 a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
+    color: #whitesmoke;
+    background-color: #6B7A8F;
     text-decoration: none;
 }
 
@@ -68,7 +74,7 @@ footer {
     }
     
     picture.profile img {
-        width: 50%;
+        width: 30%;
         float: left;
         margin-right: 2em;
     }

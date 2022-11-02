@@ -54,21 +54,21 @@
 }
 
 
-/* DESKTOP */
+/* Profess */
 @media all and (min-width:1200px) {
     .topnav {
         width: 80%;
     }
 }
 
-/* TABLET */
+/* Me at beach */
 @media all and (min-width:501px) and (max-width:1199px) {
     .topnav {
         width: 90%;
     }
 }
 
-/* PHONE */
+/* Luna */
 @media all and (max-width:500px) {
     .topnav {
         width: 100%;
