@@ -61,7 +61,7 @@ footer {
 
 /* Responsive rules */
 
-/* Profess */
+/* Me at beach */
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 80%;
@@ -74,7 +74,7 @@ footer {
     }
     
     picture.profile img {
-        width: 30%;
+        width: 40%;
         float: left;
         margin-right: 2em;
     }
@@ -101,7 +101,7 @@ footer {
 
 }
 
-/* Me at beach */
+/* Profess  */
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;
