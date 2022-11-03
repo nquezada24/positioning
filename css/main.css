@@ -81,7 +81,7 @@ footer {
     
 }
 
-/* luna */
+/* me at beach */
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
@@ -101,7 +101,7 @@ footer {
 
 }
 
-/* Me at beach */
+/* profess */
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;
