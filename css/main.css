@@ -1,6 +1,6 @@
 /* Global rules */
 
-@import url'(https://fonts.googleapis.com/css?family=Manrope)';
+@import url(https://fonts.googleapis.com/css?family=Manrope);
 
 html {
     background-color: #DCC7AA;
@@ -9,7 +9,7 @@ html {
     line-height: 1.5em;
 }
 
-body{
+body {
     margin:0; /* removes space above body, top of page */
  }
  
@@ -26,7 +26,7 @@ h1 {
 }
 
 /*adds google font to H1 for main pages */
-h1.page-header{
+h1.page-header {
     font-family: 'Manrope' ,serif;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -39,7 +39,7 @@ h1.page-header{
 
 main.wrapper {
     background-color: #F7C331;
-    overflow: auto
+     overflow: auto;
      background-color: white;
      overflow: auto;
     -moz-border-radius-bottomleft: 5px;
@@ -76,9 +76,105 @@ footer {
     padding: 1em;
 }
 
+/* start positioning css */
+
+/* Allows box to take up full space, ignoring padding/margin */
+
+* {
+    box-sizing: border-box;
+  }
+  
+ /* Create two equal columns that floats next to each other */
+    .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+    .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+  
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ }
+/* start social */
+
+.social-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 20px 25px;
+ }
+ 
+/* end social */
+
+/* flexible image rules start here */
+ 
+.flexible img{
+    width:100%;
+ }
+  
+ .flexible{
+    display: flex;
+    justify-content: space-evenly;
+ }
+  
+ /* flexible image rules end here */ 
+
+/* end poistioning css */
+
 /* Responsive rules */
 
-/* profess */
+/* desktop */
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 80%;
@@ -98,7 +194,7 @@ footer {
     
 }
 
-/* beach */
+/* tablet */
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
@@ -118,7 +214,7 @@ footer {
 
 }
 
-/* Luna */
+/* Mobile */
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;
@@ -134,3 +230,8 @@ footer {
     }
     
 }
+
+/* used to re-position colums as vertical */
+.my-column {
+    width: 100%;
+  }
