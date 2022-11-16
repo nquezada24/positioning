@@ -1,124 +1,118 @@
 /* Global rules */
-
-@import url(https://fonts.googleapis.com/css?family=Manrope);
-
+ 
+@import url('https://fonts.googleapis.com/css?family=Manrope|Quicksand');
+ 
 html {
     background-color: #DCC7AA;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-size: 1500px 800px;
 }
-
-/* removes space above body, top of page */
-body {
-    margin:0;
- }
+ 
+body{
+    margin:0; /* removes space above body, top of page */
+ } 
  
 ::selection {
-    color: #000; 
-    background: #ff0;
+    color: rgb(0, 0, 0); 
+    background: #fffc00;
 }
-
+ 
 h1 {
     font-weight: normal;
     margin: auto;
     background: #F7882F;
     line-height: 2.5em;
 }
-
-/*adds google font to H1 for main pages */
+ 
 h1.page-header {
-    font-family: 'Manrope' ,serif;
+    font-family:'Playfair Display', serif;
+    color: #fff;
+    text-align: center;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
     -moz-border-radius-topleft: 5px;
     -moz-border-radius-topright: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
- }
-
-
+}
+ 
+h2.subheader{
+    font-family:'Playfair Display', serif;
+}
+ 
 main.wrapper {
     background-color: #F7C331;
-     overflow: auto;
-     background-color: white;
-     overflow: auto;
+    overflow: auto;
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-    
-
+    border-bottom-right-radius: 5px; 
+}
+ 
 p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
 }
-
+ 
 h2,h3 {
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
 }
-
+ 
 a {
-    color: bluberry#6B7A8F;
+    color:#6B7A8F;
     text-decoration: none;
 }
-
+ 
 a:hover {
     color: whitesmoke;
     background-color: #6B7A8F;
     text-decoration: none;
 }
-
+ 
 footer {
     clear: both;
     text-align: center;
     padding: 1em;
 }
-
-/* start positioning css */
-
+/* Start Positioning Styles */
+ 
 /* Allows box to take up full space, ignoring padding/margin */
-
 * {
     box-sizing: border-box;
   }
-  
+ 
  /* Create two equal columns that floats next to each other */
-    .my-column {
+ .my-column {
     float: left;
     width: 50%;
     padding: 10px;
     min-height: 300px; /* Can be removed. Only for demonstration */
   }
-
    /* Clear floats after the columns */
-    .my-row:after {
+  .my-row:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } 
  
 .text-align-center{
     text-align:center;
     background-color:aqua;
  }
-  
+ 
  .margin-auto > div{
     margin:auto;
     width:50%;
     background-color:beige;
     text-align:center;
- }
-/* start social */
-
-.social-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
+ } 
  
-.fa {
+ .fa {
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -129,10 +123,12 @@ footer {
    .fa:hover {
       opacity: 0.7;
   }
-   .fa-facebook {
+  .fa-facebook {
     background: #3B5998;
     color: white;
-  }
+    padding: 20px 25px;
+ }
+ 
    .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -150,90 +146,88 @@ footer {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
-
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-    padding: 20px 25px;
- }
  
-/* end social */
-
-/* flexible image rules start here */
+  .social-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+  /* flexible image rules start here */
  
 .flexible img{
     width:100%;
  }
-  
+ 
  .flexible{
     display: flex;
     justify-content: space-evenly;
  }
-  
+ 
  /* flexible image rules end here */ 
-
-/* end poistioning css */
-
+ 
+ 
+/* End Positioning Styles */
+ 
 /* Responsive rules */
-
-/* desktop */
+ 
+/* DESKTOP */
 @media all and (min-width:1200px) {
     main.wrapper {
         width: 80%;
         margin: auto;
     }
-    
+ 
     h1 {
         width: 79%;
         padding-left: 1%;
     }
-    
+ 
     picture.profile img {
-        width: 40%;
+        width: 50%;
         float: left;
         margin-right: 2em;
     }
-    
+ 
 }
-
-/* tablet */
+ 
+/* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
         margin: auto;
     }
-    
+ 
     h1 {
         width: 89%;
         padding-left: 1%;
     }
-    
+ 
     picture.profile img {
         width: 50%;
         float: right;
         margin-left: 1em;
     }
-
+ 
 }
-
-/* Mobile */
+ 
+/* PHONE */
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;
     }
-    
+ 
     h1 {
         width: 99%;
         padding-left: 1%;
     }
-    
+ 
     picture.profile img {
         width: 100%;
     }
-    
+ 
+    /* Changes Width of Column in Mobile */
+    .my-column {
+        width: 100%;
+      } 
+ 
 }
-
-/* used to re-position colums as vertical */
-.my-column {
-    width: 100%;
-  }
