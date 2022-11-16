@@ -9,8 +9,9 @@ html {
     line-height: 1.5em;
 }
 
+/* removes space above body, top of page */
 body {
-    margin:0; /* removes space above body, top of page */
+    margin:0;
  }
  
 ::selection {
@@ -91,6 +92,7 @@ footer {
     padding: 10px;
     min-height: 300px; /* Can be removed. Only for demonstration */
   }
+
    /* Clear floats after the columns */
     .my-row:after {
     content: "";
